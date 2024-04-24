@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/MainThemeColor"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:text="Welcome To"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="363dp"
+                android:layout_height="191dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/intelli_welcome"
+
+                />
+
+
+        </LinearLayout>
+    <LinearLayout
+            android:background="@drawable/layout_bg"
+            android:layout_width="2000dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="255dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/justlogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="38dp"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:padding="16dp"
+                            android:text="Login as"/>
+
+                        <TextView
+                            android:id="@+id/textVendor"
+                            android:layout_width="90dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/text_view_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:text="Vendor"
+                            android:layout_marginTop="38dp"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textUser"
+                            android:layout_width="90dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/text_view_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:text="User"
+                            android:layout_marginTop="38dp"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:drawableLeft="@drawable/ic_emai"
+                        android:drawablePadding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+
+                        android:background="@drawable/edit_bg"
+                        android:hint="Email"
+                        android:textColor="@color/black"
+                        android:padding="24dp"
+                        android:textColorHint="@color/black"
+                        android:minHeight="48dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:textColorHint="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/edit_bg"
+                        android:hint="Password"
+                        android:drawablePadding="20dp"
+                        android:drawableLeft="@drawable/ic_baseline_info_24"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:padding="24dp"
+                        android:minHeight="48dp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_round_bg"
+                        android:text="Login" />
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/create_acc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textStyle="italic"
+                        android:text="Don't have account? Create Account"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+</RelativeLayout>

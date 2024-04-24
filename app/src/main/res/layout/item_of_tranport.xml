@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="114dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:id="@+id/Insert_img"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toyota Crown"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:id="@+id/name"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+
+
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Rs 2,000/ day(s)"
+               android:id="@+id/price"
+               android:fontFamily="serif"
+               android:textColor="@color/reddish"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               android:layout_marginTop="5dp"
+               android:layout_marginStart="16dp"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_marginStart="32dp"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/car_seat"/>
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:id="@+id/capacitytext"
+                   android:layout_height="wrap_content"
+                   android:text="5"
+                   android:textSize="18dp"/>
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dfsdfs"
+            android:id="@+id/des"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#CCCCCC" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Includes:"
+            android:textColor="@color/Secondary_main"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dfsdfs"
+            android:id="@+id/packageServices"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

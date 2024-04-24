@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daig">
+
+        <LinearLayout
+            android:id="@+id/lol"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/MainThemeColor"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/back_to_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Add Daig"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lol"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/lol2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lol"
+                    android:orientation="vertical">
+                    <!-- text to be displayed whenever current state is checked-->
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:drawableStart="@drawable/ic_baseline_radio_button_checked_24"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="Title"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/mealname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Title e.g: Chicken daig"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#757575"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lol1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/lol2"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#CCCCCC" />
+
+                <LinearLayout
+                    android:id="@+id/lol4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lol1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:drawableStart="@drawable/ic_baseline_local_offer_24"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="Starting Price"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="65dp"
+                        android:hint="Pkr"
+                        android:inputType="text"
+                        android:id="@+id/StartingPrice"
+                        android:maxLines="1"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#CCCCCC" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:drawableStart="@drawable/ic_baseline_local_offer_24"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="Price per kg"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:hint="Ingredient"
+                            android:inputType="text"
+                            android:id="@+id/IngredientEdit"
+                            android:maxLines="1"
+                            android:textAlignment="textStart"
+                            android:textSize="18sp"
+                            android:background="@android:color/transparent"
+                            />
+                        <EditText
+                            android:id="@+id/meal_price"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="start"
+                            android:hint="Enter Amount"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAlignment="textStart"
+                            android:textSize="18sp"
+
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/add_Daig_to_rv"
+                            android:background="@color/highlighted_grey"
+                            android:src="@drawable/ic_baseline_add_24"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Daig_ingrediet_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="10dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#CCCCCC" />
+                    <EditText
+                    android:id="@+id/minimum_order"
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:hint="Minimum_order e.g: 5 kg"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+
+                    />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lol5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/lol4"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#CCCCCC" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lol5"
+                    android:id="@+id/l1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:drawableStart="@drawable/ic_baseline_description_24"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/des"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="65dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Describe your Daig in details"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/l1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:padding="16dp"
+                    android:text="Upload Images"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/upload_img"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:hint="select image"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="3"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_round_bg"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/white"
+                    android:minHeight="48dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/upload_img"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#CCCCCC" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Add_meals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Add Daig"
+                    android:maxLines="3"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_round_bg"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/white"
+                    android:minHeight="48dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/imageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/lol2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/imageRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/upload_img"
+                        android:orientation="horizontal" />
+                    <!-- Add any additional properties you need for the LinearLayout -->
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/post_meal_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="16dp"
+                    android:hint="Publish Meals"
+                    android:maxLines="3"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_round_bg"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/white"
+                    android:minHeight="48dp"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

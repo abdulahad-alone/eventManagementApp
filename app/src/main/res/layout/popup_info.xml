@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_text"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textColor="@color/white"
+    android:text="Enter keywords with small letters. It helps you to get more impression on your ads.
+(eg. chair, table, tent, waiter service and etc)"
+    android:elevation="4dp"
+    android:background="#A8000000"
+    />

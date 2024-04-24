@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="7dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+android:background="@drawable/house"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/short_description"
+                android:text="Altaf Marguee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+
+                android:textColor="@color/white"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locations"
+                android:textColor="@color/white"
+                android:text="marquee in Islamabad "
+
+                android:layout_marginStart="8dp"
+                android:textSize="10sp"
+
+                android:layout_marginTop="4dp"
+                />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/MainThemeColor"
+            android:layout_alignParentStart="true"
+            app:cardCornerRadius="16dp"
+            android:layout_margin="16dp"
+            >
+            <TextView
+                android:id="@+id/price"
+                android:text="2500 per head"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
